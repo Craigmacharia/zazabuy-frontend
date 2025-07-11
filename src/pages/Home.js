@@ -841,19 +841,19 @@ function Home() {
                   className="mb-2"
                   whileHover={{ x: 5 }}
                 >
-                  <a href="#" style={{ color: '#F8FFE5', textDecoration: 'none' }}>All Products</a>
+                  <a href="/home" style={{ color: '#F8FFE5', textDecoration: 'none' }}>All Products</a>
                 </motion.li>
                 <motion.li 
                   className="mb-2"
                   whileHover={{ x: 5 }}
                 >
-                  <a href="#" style={{ color: '#F8FFE5', textDecoration: 'none' }}>New Arrivals</a>
+                  <a href="/home" style={{ color: '#F8FFE5', textDecoration: 'none' }}>New Arrivals</a>
                 </motion.li>
                 <motion.li 
                   className="mb-2"
                   whileHover={{ x: 5 }}
                 >
-                  <a href="#" style={{ color: '#F8FFE5', textDecoration: 'none' }}>Special Offers</a>
+                  <a href="/home" style={{ color: '#F8FFE5', textDecoration: 'none' }}>Special Offers</a>
                 </motion.li>
               </ul>
             </div>
@@ -864,19 +864,19 @@ function Home() {
                   className="mb-2"
                   whileHover={{ x: 5 }}
                 >
-                  <a href="#" style={{ color: '#F8FFE5', textDecoration: 'none' }}>Contact Us</a>
+                  <a href="home" style={{ color: '#F8FFE5', textDecoration: 'none' }}>Contact Us</a>
                 </motion.li>
                 <motion.li 
                   className="mb-2"
                   whileHover={{ x: 5 }}
                 >
-                  <a href="#" style={{ color: '#F8FFE5', textDecoration: 'none' }}>FAQs</a>
+                  <a href="/home" style={{ color: '#F8FFE5', textDecoration: 'none' }}>FAQs</a>
                 </motion.li>
                 <motion.li 
                   className="mb-2"
                   whileHover={{ x: 5 }}
                 >
-                  <a href="#" style={{ color: '#F8FFE5', textDecoration: 'none' }}>Shipping Policy</a>
+                  <a href="/home" style={{ color: '#F8FFE5', textDecoration: 'none' }}>Shipping Policy</a>
                 </motion.li>
               </ul>
             </div>

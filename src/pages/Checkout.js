@@ -81,20 +81,19 @@ function Checkout() {
 
     setLoading(true);
 
-    try {
-      // Create a single order with all items
-      const response = await API.post(
-        '/checkout/',
-        {
-          items: cart.map(item => ({
-            product: item.id,
-            quantity: item.quantity || 1,
-            price: item.price
-          })),
-          ...buyer
-        },
-        { headers: { Authorization: `Token ${token}` } }
-      );
+    await API.post(
+      '/checkout/',
+      {
+        items: cart.map(item => ({
+          product: item.id,
+          quantity: item.quantity || 1,
+          price: item.price
+        })),
+        ...buyer
+      },
+      { headers: { Authorization: `Token ${token}` } }
+    );
+    
 
       toast.success('M-Pesa payment request sent! Check your phone');
       localStorage.removeItem('cart');
