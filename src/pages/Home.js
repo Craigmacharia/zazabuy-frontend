@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import API from '../api';
 import ProductCard from '../components/ProductCard';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiTruck, FiSmartphone, FiShield, FiSearch, FiFilter, FiChevronLeft, FiChevronRight, FiMail, FiShoppingCart, FiHeart } from 'react-icons/fi';
+import { FiTruck, FiSmartphone, FiShield, FiSearch, FiFilter, FiChevronRight, FiMail, FiShoppingCart, FiHeart } from 'react-icons/fi';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
