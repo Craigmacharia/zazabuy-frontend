@@ -81,20 +81,21 @@ function Checkout() {
 
     setLoading(true);
 
-    await API.post(
-      '/checkout/',
-      {
-        items: cart.map(item => ({
-          product: item.id,
-          quantity: item.quantity || 1,
-          price: item.price
-        })),
-        ...buyer
-      },
-      { headers: { Authorization: `Token ${token}` } }
-    );
+    try {
+      // Create a single order with all items
+      await API.post(
+        '/checkout/',
+        {
+          items: cart.map(item => ({
+            product: item.id,
+            quantity: item.quantity || 1,
+            price: item.price
+          })),
+          ...buyer
+        },
+        { headers: { Authorization: `Token ${token}` } }
+      );
     
-
       toast.success('M-Pesa payment request sent! Check your phone');
       localStorage.removeItem('cart');
       navigate('/orders');
@@ -104,7 +105,7 @@ function Checkout() {
     } finally {
       setLoading(false);
     }
-  };
+    
 
   const calculateTotal = () => {
     return cart.reduce((sum, item) => sum + (item.price * (item.quantity || 1)), 0);
@@ -268,6 +269,7 @@ function Checkout() {
       </div>
     </motion.div>
   );
+}
 }
 
 export default Checkout;
