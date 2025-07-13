@@ -161,7 +161,8 @@ function Home() {
           animate={{ scale: 1 }}
           style={{ fontSize: '0.7rem' }}
         >
-          {JSON.parse(localStorage.getItem('cart') || []).length}
+          {JSON.parse(localStorage.getItem('cart') || '[]').length}
+
         </motion.span>
       </motion.div>
 
