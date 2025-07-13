@@ -119,9 +119,9 @@ function Home() {
   };
 
   const slides = [
-    { id: 1, image: '/tenje.jpg', title: 'Tech Revolution', subtitle: 'Premium gadgets at unbeatable prices', cta: 'Shop Now' },
-    { id: 2, image: '/buds.jpg', title: 'M-Pesa Special', subtitle: 'Extra 5% cashback on all payments', cta: 'Get Deal' },
-    { id: 3, image: '/lapi.jpg', title: 'New Arrivals', subtitle: 'Cutting-edge technology just landed', cta: 'Explore' }
+    { id: 1, image: '/itel.png', title: 'Tech Revolution', subtitle: 'Premium gadgets at unbeatable prices', cta: 'Shop Now' },
+    { id: 2, image: '/oraimo.png', title: 'M-Pesa Special', subtitle: 'Extra 5% cashback on all payments', cta: 'Get Deal' },
+    { id: 3, image: '/mac.png', title: 'New Arrivals', subtitle: 'Cutting-edge technology just landed', cta: 'Explore' }
   ];
 
   const formatCategoryName = (category) => {
